@@ -1,7 +1,7 @@
 const gulp = require('gulp');
 const browserSync = require('browser-sync');
 const reload = browserSync.reload;
-const notify = require('gulp-notify');
+// const notify = require('gulp-notify');
 const sass = require('gulp-sass');
 const plumber = require('gulp-plumber');
 const concat = require('gulp-concat');
