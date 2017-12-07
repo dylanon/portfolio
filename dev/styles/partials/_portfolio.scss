@@ -1,0 +1,29 @@
+/* PORTFOLIO */
+
+.project {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    margin-bottom: 100px;
+
+    // For every second project, visually flip content
+    &:nth-last-child(2n+1) {
+        text-align: left;
+
+        .project-image {
+            order: -1;
+        }
+    }
+}
+
+.project-description {
+    width: 30%;
+    margin: 0 2.4rem;
+}
+
+.project-image {
+    width: 50%;
+    margin: 0 2.4rem;
+}
