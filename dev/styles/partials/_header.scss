@@ -1,0 +1,77 @@
+/* HEADER */
+
+header {
+    background: $primary-color;
+    color: $text-color-light;
+    height: 100vh;
+
+    .wrapper {
+        height: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    h1,
+    h2 {
+        margin: 0;
+    }
+}
+
+.logo {
+    display: flex;
+    background: $secondary-color;
+    border-radius: 50%;
+    padding: 0 1em;
+    line-height: 1;
+
+    p {
+        font: {
+            size: 2.3rem;
+            weight: 700;
+        }
+        margin: auto;
+    }
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+
+    ul,
+    li {
+        display: inline-block;
+    }
+}
+
+.hero-text {
+    transform: rotate(-0.25turn);
+    align-self: center;
+    padding-left: 250px;
+}
+
+.site-title {
+    font: {
+        size: 10.4rem;
+        weight: 700;
+    }
+    line-height: 0.85;
+    text-transform: uppercase;
+    
+    .last-name {
+        font-size: 17.2rem;
+    }
+}
+
+.site-tagline {
+    color: $secondary-color;
+    font: {
+        size: 2.98rem;
+        weight: 400;
+    }
+}

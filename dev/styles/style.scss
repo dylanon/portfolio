@@ -1,20 +1,16 @@
 // Variables
 
-$primary: #443a8b;
+$primary-color: #443a8b;
+$secondary-color: #fe6192;
+$text-color: #b3b2b8;
+$text-color-light: #ffffff;
 
 $font: 'Montserrat', sans-serif;
+$font-size: 1.6rem;
 $font-secondary: 'Playfair Display', serif;
 
 // Imports
 
 @import 'partials/setup';
-
-body {
-    background: black;
-    color: #f1f1f1;
-    font-family: $font;
-}
-
-header {
-    background: $primary;
-}
+@import 'partials/globals';
+@import 'partials/header';

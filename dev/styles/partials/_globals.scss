@@ -1,0 +1,24 @@
+/* GLOBALS */
+
+html {
+    font-size: 10px / 16px * 100%;
+}
+
+body {
+    // background: black;
+    color: $text-color;
+    font: {
+        family: $font;
+        size: $font-size;
+    }
+}
+
+a {
+    color: $secondary-color;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
