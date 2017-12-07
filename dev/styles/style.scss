@@ -1,5 +1,10 @@
 // Variables
 
+$primary: #443a8b;
+
+$font: 'Montserrat', sans-serif;
+$font-secondary: 'Playfair Display', serif;
+
 // Imports
 
 @import 'partials/setup';
@@ -7,4 +12,9 @@
 body {
     background: black;
     color: #f1f1f1;
+    font-family: $font;
+}
+
+header {
+    background: $primary;
 }
