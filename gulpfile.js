@@ -27,7 +27,8 @@ gulp.task('bs', () => {
 	return browserSync.init({
 		server: {
 			baseDir: 'public'
-		}
+        },
+        // browser: 'firefox'
 	});
 });
 
