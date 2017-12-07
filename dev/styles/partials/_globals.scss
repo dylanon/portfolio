@@ -19,11 +19,18 @@ img {
 
 a {
     color: $secondary-color;
+    font: {
+        size: 2.5rem;
+        weight: 700;
+    }
+    line-height: 3.16;
+    text-transform: uppercase;
+    margin: 0 1.6rem;
 }
 
 h3,
 h4 {
-    color: $heading-color;
+    color: $contrast-color;
     margin: 0;
 }
 
@@ -47,7 +54,7 @@ h4 {
 }
 
 .wrapper {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 16px;
 }
@@ -55,15 +62,23 @@ h4 {
 .highlight-section {
     background: $highlight-bg-color;
     padding-top: 200px;
+    position: relative;
+    // Creates angled bottom edge
+    @include angledEdge(5deg, left bottom);
+    
+    .section-heading {
+        margin-top: 0;
+    }
 }
 
 .section-heading {
     display: flex;
     flex-flow: column nowrap;
+    margin-top: 200px;
 
     h3 {
         text-align: center;
-        margin: 2.8rem 0;
+        margin: 2.8rem 0 13.8rem 0;
     }
 
     h4 {

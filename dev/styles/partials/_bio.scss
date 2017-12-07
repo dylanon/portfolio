@@ -1,0 +1,47 @@
+/* BIO */
+
+.bio {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.headshot,
+.bio-text {
+    width: 50%;
+}
+
+.bio-text {
+    font: {
+        size: 1.8rem;
+    }
+    line-height: 1.67;
+    position: relative;
+    left: -40px;
+}
+
+.bio-lead {
+    color: $contrast-color;
+    font: {
+        size: 3rem;
+    }
+    line-height: 1.77;
+}
+
+.bio-body {
+    position: relative;
+    
+    &::before {
+        display: block;
+        content: '';
+        height: 1px;
+        width: 8.6rem;
+        background: $line-color-vibrant;
+        position: absolute;
+        // left: (8.6rem + 2.8rem) * -1;
+        top: -1.7rem;
+    }
+}
+
+.social-links {
+    text-align: right;
+}

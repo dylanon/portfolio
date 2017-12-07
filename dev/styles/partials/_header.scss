@@ -2,7 +2,7 @@
 
 header {
     background: $primary-color;
-    color: $text-color-light;
+    color: $light-text-color;
     height: 100vh;
     position: relative;
     z-index: 10;
@@ -23,27 +23,16 @@ header {
         margin: 0;
     }
 
-    &::after {
-        display: block;
-        content: '';
-        height: 50%;
-        background: inherit;
-        transform: skewY(-5deg);
-        transform-origin: right bottom;
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        // Place behind the parent text in the current stacking context
-        z-index: -1;
-    }
+    // Creates an ::after element for the edge
+    @include angledEdge(-5deg, right bottom);
 }
 
 .logo {
     display: flex;
     background: $secondary-color;
-    border-radius: 50%;
+    border-radius: 10px;
     padding: 0 1em;
-    line-height: 1;
+    line-height: 0.5;
 
     p {
         font: {
@@ -57,7 +46,23 @@ header {
 .main-nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-top: 60px;
+
+    a {
+        color: $light-text-color;
+        text-decoration: none;
+        &:hover,
+        &:focus {
+            color: $secondary-color;
+            text-decoration: underline;
+        }
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
 
     ul,
     li {

@@ -2,11 +2,13 @@
 
 $primary-color: #443a8b;
 $secondary-color: #fe6192;
-$text-color: #b3b2b8;
-$text-color-light: #ffffff;
+$text-color: #b2b1b8;
+$lead-text-color: #b3b2b8;
+$light-text-color: #ffffff;
 $highlight-bg-color: #f7f7f7;
-$heading-color: #232227;
+$contrast-color: #232227;
 $line-color: #424242;
+$line-color-vibrant: #ef5350;
 
 $font: 'Montserrat', sans-serif;
 $font-size: 1.6rem;
@@ -15,5 +17,7 @@ $font-secondary: 'Playfair Display', serif;
 // Imports
 
 @import 'partials/setup';
+@import 'partials/mixins';
 @import 'partials/globals';
 @import 'partials/header';
+@import 'partials/bio';
