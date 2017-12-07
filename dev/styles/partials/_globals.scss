@@ -59,18 +59,6 @@ h4 {
     padding: 0 16px;
 }
 
-.highlight-section {
-    background: $highlight-bg-color;
-    padding-top: 200px;
-    position: relative;
-    // Creates angled bottom edge
-    @include angledEdge(5deg, left bottom);
-    
-    .section-heading {
-        margin-top: 0;
-    }
-}
-
 .section-heading {
     display: flex;
     flex-flow: column nowrap;

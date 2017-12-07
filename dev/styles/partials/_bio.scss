@@ -1,8 +1,21 @@
 /* BIO */
 
+.highlight-section {
+    background: $highlight-bg-color;
+    padding-top: 200px;
+    position: relative;
+    // Creates angled bottom edge
+    @include angledEdge(5deg, left bottom);
+    
+    .section-heading {
+        margin-top: 0;
+    }
+}
+
 .bio {
     display: flex;
     flex-flow: row nowrap;
+    align-items: center;
 }
 
 .headshot,
@@ -15,8 +28,7 @@
         size: 1.8rem;
     }
     line-height: 1.67;
-    position: relative;
-    left: -40px;
+    padding-left: 3.2rem;
 }
 
 .bio-lead {
@@ -29,7 +41,7 @@
 
 .bio-body {
     position: relative;
-    
+
     &::before {
         display: block;
         content: '';
@@ -37,11 +49,12 @@
         width: 8.6rem;
         background: $line-color-vibrant;
         position: absolute;
+        // Uncomment to place the red line on the photo exactly like in the design
         // left: (8.6rem + 2.8rem) * -1;
         top: -1.7rem;
     }
 }
 
 .social-links {
-    text-align: right;
+    text-align: center;
 }
