@@ -4,6 +4,7 @@ header {
     background: $primary-color;
     color: $text-color-light;
     height: 100vh;
+    position: relative;
 
     .wrapper {
         height: 100%;
@@ -19,6 +20,19 @@ header {
     h1,
     h2 {
         margin: 0;
+    }
+
+    &::after {
+        display: block;
+        content: '';
+        height: 50%;
+        background: inherit;
+        transform: skewY(-5deg);
+        transform-origin: right bottom;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        z-index: -10;
     }
 }
 
