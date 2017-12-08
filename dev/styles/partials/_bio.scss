@@ -1,11 +1,14 @@
 /* BIO */
 
-.highlight-section {
+.bio-section {
     background: $highlight-bg-color;
     padding-top: 200px;
     position: relative;
+    
     // Creates angled bottom edge
-    @include angledEdge(5deg, left bottom);
+    &::after {
+        @include angledEdge(5deg, left bottom);
+    }
     
     .section-heading {
         margin-top: 0;

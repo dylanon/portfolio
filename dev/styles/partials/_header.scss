@@ -24,7 +24,9 @@ header {
     }
 
     // Creates an ::after element for the edge
-    @include angledEdge(-5deg, right bottom);
+    &::after {
+        @include angledEdge(-5deg, right bottom);
+    }
 }
 
 .logo {

@@ -1,17 +1,16 @@
 // Mixins
 
-@mixin angledEdge($angle: -5deg, $origin: right bottom) {
-    &::after {
-        display: block;
-        content: '';
-        height: 50%;
-        background: inherit;
-        transform: skewY($angle);
-        transform-origin: $origin;
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        // Place behind the parent text in the current stacking context
-        z-index: -1;
-    }
+@mixin angledEdge($angle: -5deg, $origin: right bottom, $top: initial, $bottom: 0) {
+    display: block;
+    content: '';
+    height: 50%;
+    background: inherit;
+    transform: skewY($angle);
+    transform-origin: $origin;
+    position: absolute;
+    bottom: $bottom;
+    top: $top;
+    width: 100%;
+    // Place behind the parent text in the current stacking context
+    z-index: -1;
 }
