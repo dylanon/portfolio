@@ -2,4 +2,99 @@
 
 .contact-section {
     background: $primary-color;
+
+    h3,
+    h4 {
+        color: $light-text-color;
+    }
+
+    h4::before {
+        background: $light-text-color;
+    }
+
+    form {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    label {
+        display: block;
+    }
+
+    .message-label {
+        color: $light-text-color;
+        font: {
+            size: 2.5rem;
+        }
+        line-height: 1.28;
+        padding-bottom: 2rem;
+    }
+
+    input,
+    textarea {
+        background: transparent;
+        color: $light-text-color;
+        width: 100%;
+        font: {
+            size: 2.5rem;
+        }
+        line-height: 1.28;
+        padding-bottom: 2rem;
+        margin-bottom: 7rem;
+
+        &::placeholder {
+            color: $light-text-color;
+            font: {
+                size: 2.5rem;
+            }
+            line-height: 1.28;
+            // Fix opacity for Firefox
+            opacity: 1;
+        }
+    }
+
+    input {
+        border: 1px solid $line-color-form;
+        border-top: 0;
+        border-right: 0;
+        border-left: 0;
+    }
+    
+    textarea {
+        border: 1px solid $line-color-form;
+        border-top: 0;
+        border-bottom: 0;
+        padding: 0 1.6rem;
+    }
+
+    button {
+        display: block;
+        margin: 0 auto;
+        padding: 2.7rem 14.9rem;
+        background: transparent;
+        border: 3px solid $secondary-color;
+        color: $secondary-color;
+        font: {
+            size: 2.5rem;
+            weight: 700;
+        }
+        text-transform: uppercase;
+        transition: color 0.3s ease, background 0.3s ease, border-color 0.3s ease;
+
+        &:hover,
+        &:focus {
+            background: $line-color-vibrant;
+            color: $primary-color;
+            border-color: $line-color-vibrant;
+        }
+    }
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-column {
+    width: 48%;
 }
