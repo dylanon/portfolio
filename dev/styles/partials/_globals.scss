@@ -73,10 +73,13 @@ h5 {
     padding: 0 16px;
 }
 
+.main-section {
+    padding-top: 200px;
+}
+
 .section-heading {
     display: flex;
     flex-flow: column nowrap;
-    margin-top: 200px;
 
     h3 {
         text-align: center;
