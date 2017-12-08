@@ -1,0 +1,16 @@
+/* SKILLS */
+
+.skills-section {
+    background: $secondary-color;
+    position: relative;
+    padding-top: 100px;
+    z-index: 10;
+
+    &::before {
+        @include angledEdge(-5deg, left top, 0, initial);
+    }
+    
+    &::after {
+        @include angledEdge(5deg, left bottom);
+    }
+}
