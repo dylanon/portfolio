@@ -1,7 +1,8 @@
 /* SKILLS */
 
 .skills-section {
-    background: $secondary-color;
+    color: $primary-color;
+    background: $line-color-vibrant;
     position: relative;
     padding-top: 100px;
     z-index: 10;
@@ -12,5 +13,44 @@
     
     &::after {
         @include angledEdge(5deg, left bottom);
+    }
+
+    h3,
+    h4 {
+        color: $light-text-color;
+    }
+
+    h4::before {
+        background: $light-text-color;
+    }
+}
+
+.skills-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    li {
+        width: 23%;
+        padding: 1.6rem;
+        text-align: center;
+        background: $highlight-bg-color;
+        margin: 0 8px 16px 8px;
+    }
+
+    i {
+        color: $primary-color;
+        font-size: 10rem;
+    }
+
+    h5 {
+        color: $primary-color;
+        font: {
+            size: 2rem;
+        }
+        margin: 1.6rem 0;
     }
 }
