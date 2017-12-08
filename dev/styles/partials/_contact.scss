@@ -123,7 +123,8 @@
     top: -10px;
     transition: font-size 0.3s ease;
 
-    &:hover {
+    &:hover,
+    &:focus {
         color: $secondary-color;
         text-decoration: underline;
         font-size: 1.2em;
@@ -142,7 +143,8 @@
 
     a {
         font-size: 4rem;
-        &:hover {
+        &:hover,
+        &:focus {
             color: $light-text-color;
         }
     }
