@@ -129,3 +129,21 @@
         font-size: 1.2em;
     }
 }
+
+.social-icons {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+        display: inline-block;
+        margin: 4rem 1.5rem;
+    }
+
+    a {
+        font-size: 4rem;
+        &:hover {
+            color: $light-text-color;
+        }
+    }
+}
