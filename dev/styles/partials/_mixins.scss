@@ -14,3 +14,12 @@
     // Place behind the parent text in the current stacking context
     z-index: -1;
 }
+
+@mixin confetti($height: 65px, $width: 92px, $path: '../assets/pink-squiggle.png') {
+    display: block;
+    content: '';
+    height: $height;
+    width: $width;
+    background: url($path) no-repeat;
+    position: absolute;
+}
