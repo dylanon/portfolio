@@ -30,25 +30,21 @@ header {
 }
 
 .logo {
-    display: flex;
     background: $secondary-color;
-    border-radius: 10px;
-    padding: 0 1em;
-    line-height: 0.5;
-
-    p {
+    padding: 0 0.7em;
+    transform: skewX(-40deg);
+    
+    a {
+        display: block;
         font: {
-            size: 2.3rem;
+            size: 3rem;
             weight: 700;
         }
-        margin: auto;
         text-transform: uppercase;
-    }
-
-    a {
+        line-height: 0.4;
         color: $light-text-color;
         text-decoration: none;
-        line-height: 0.5;
+        transform: skewX(40deg);
     }
 }
 
@@ -71,13 +67,15 @@ header {
 }
 
 .main-nav-links {
+    
     a {
+        font-size: 2rem;
         color: $light-text-color;
         text-decoration: none;
+        
         &:hover,
         &:focus {
             color: $secondary-color;
-            text-decoration: underline;
         }
     }
 }
