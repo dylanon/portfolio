@@ -68,6 +68,10 @@
 .headshot {
     position: relative;
     left: 30px;
+
+    img {
+        display: block;
+    }
 }
 
 .bio-text {
