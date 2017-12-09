@@ -251,24 +251,24 @@
                     <h4>Get in Touch</h4>
                     <h3>Contact</h3>
                 </div>
-                <form action="">
+                <form action="https://formspree.io/hey@dylanon.com" method="POST">
                     <div>
                         <label for="contact-name" class="visuallyhidden">Name</label>
-                        <input type="text" id="contact-name" placeholder="Name" required>
+                        <input type="text" id="contact-name" name="contact-name" placeholder="Name" required>
                     </div>
                     <div class="form-row">
                         <div class="form-column">
                             <label for="contact-phone" class="visuallyhidden">Phone</label>
-                            <input type="tel" id="contact-phone" placeholder="Phone">
+                            <input type="tel" id="contact-phone" name="contact-phone" placeholder="Phone">
                         </div>
                         <div class="form-column">
                             <label for="contact-email" class="visuallyhidden">Email</label>
-                            <input type="email" id="contact-email" placeholder="Email" required>
+                            <input type="email" id="contact-email" name="contact-email" placeholder="Email" required>
                         </div>
                     </div>
                     <div>
                         <label for="contact-message" class="message-label">Write me a message!</label>
-                        <textarea rows="6" id="contact-message" required></textarea>
+                        <textarea rows="6" id="contact-message" name="contact-message" required></textarea>
                     </div>
                     <button>Send</button>
                 </form>
