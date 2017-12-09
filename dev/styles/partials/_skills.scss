@@ -77,7 +77,22 @@
         padding: 1.6rem;
         text-align: center;
         background: $highlight-bg-color;
+        box-shadow: 0px 0px $primary-color;
         margin: 0 8px 16px 8px;
+        position: relative;
+        left: 0;
+        top: 0;
+        transition: left 0.3s ease, top 0.3s ease;
+
+        &:hover {
+            box-shadow: 6px 6px $primary-color;
+            left: -2px;
+            top: -2px;
+
+            i {
+                color: $accent-color-one;
+            }
+        }
     }
 
     i {

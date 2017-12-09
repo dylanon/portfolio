@@ -33,6 +33,11 @@ header {
     background: $secondary-color;
     padding: 0 0.7em;
     transform: skewX(-40deg);
+    transition: background-color 0.3s ease;
+    
+    &:hover {
+        background-color: $accent-color-one;
+    }
     
     a {
         display: block;
