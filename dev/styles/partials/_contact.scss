@@ -89,8 +89,8 @@
         margin: 0 auto;
         padding: 2.7rem 14.9rem;
         background: transparent;
-        border: 3px solid $secondary-color;
-        color: $secondary-color;
+        border: 3px solid $tertiary-color;
+        color: $tertiary-color;
         font: {
             size: 2.5rem;
             weight: 700;
@@ -100,9 +100,9 @@
 
         &:hover,
         &:focus {
-            background: $line-color-vibrant;
+            background: $secondary-color;
             color: $light-text-color;
-            border-color: $line-color-vibrant;
+            border-color: $secondary-color;
         }
     }
 }
@@ -125,6 +125,15 @@
         weight: 400;
     }
     line-height: 1;
+
+    a {
+        color: $tertiary-color;
+
+        &:hover,
+        &:focus {
+            color: $accent-color-two;
+        }
+    }
 }
 
 .contact-alternative-or {
@@ -142,7 +151,6 @@
 
     &:hover,
     &:focus {
-        color: $secondary-color;
         text-decoration: underline;
         font-size: 1.2em;
     }
@@ -156,13 +164,6 @@
     li {
         display: inline-block;
         margin: 4rem 1.5rem;
-    }
-
-    a {
         font-size: 4rem;
-        &:hover,
-        &:focus {
-            color: $light-text-color;
-        }
     }
 }

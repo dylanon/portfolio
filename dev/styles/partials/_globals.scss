@@ -25,7 +25,6 @@ img {
 a {
     color: $secondary-color;
     font: {
-        size: 2.5rem;
         weight: 700;
     }
     text-transform: uppercase;
@@ -34,7 +33,7 @@ a {
 
     &:hover,
     &:focus {
-        color: $primary-color;
+        color: $accent-color-one;
     }
 }
 

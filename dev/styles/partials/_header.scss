@@ -75,7 +75,7 @@ header {
         
         &:hover,
         &:focus {
-            color: $secondary-color;
+            color: $accent-color-two;
         }
     }
 }
@@ -110,7 +110,7 @@ header {
 
 .site-tagline {
     position: relative; // For confetti
-    color: $secondary-color;
+    color: $tertiary-color;
     font: {
         size: 2.98rem;
         weight: 400;
