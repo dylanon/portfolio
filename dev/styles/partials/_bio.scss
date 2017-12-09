@@ -95,6 +95,10 @@
 .bio-body {
     position: relative;
 
+    a {
+        text-transform: lowercase;
+    }
+
     &::before {
         display: block;
         content: '';
