@@ -1,6 +1,23 @@
 /* CONTACT */
 
 .contact-section {
+    // For confetti
+    position: relative;
+    
+    // Green arrow confetti
+    &::after {
+        @include confetti(68px, 56px, '../assets/green-arrow-wavy.png');
+        transform: rotateY(180deg);
+        bottom: 20%;
+        left: 170px;
+    }
+
+    // Stack content in front of confetti
+    .wrapper {
+        position: relative;
+        z-index: 1;
+    }
+
     background: $primary-color;
 
     h3,
