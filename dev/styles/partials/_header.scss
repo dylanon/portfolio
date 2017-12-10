@@ -9,9 +9,10 @@ header {
 
     .wrapper {
         height: 100%;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: space-between;
+        position: relative;
+        // display: flex;
+        // flex-flow: column nowrap;
+        // justify-content: space-between;
         // justify-content: flex-start;
     }
 
@@ -58,7 +59,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 60px;
+    padding-top: 60px;
 
     ul {
         margin: 0;
@@ -89,10 +90,15 @@ header {
 }
 
 .hero-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-0.25turn);
+    // float: left;
     // margin: auto;
     // transform: rotate(-0.25turn);
-    margin: 0;
-    transform: rotate(-0.25turn) translateX(50%);
+    // margin: 0;
+    // transform: rotate(-0.25turn) translateX(50%);
 }
 
 .site-title {
