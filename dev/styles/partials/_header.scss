@@ -11,7 +11,8 @@ header {
         height: 100%;
         display: flex;
         flex-flow: column nowrap;
-        justify-content: flex-start;
+        justify-content: space-between;
+        // justify-content: flex-start;
     }
 
     p {
@@ -84,8 +85,10 @@ header {
 }
 
 .hero-text {
-    margin: auto;
-    transform: rotate(-0.25turn);
+    // margin: auto;
+    // transform: rotate(-0.25turn);
+    margin: 0;
+    transform: rotate(-0.25turn) translateX(50%);
 }
 
 .site-title {
