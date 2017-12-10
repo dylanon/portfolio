@@ -19,20 +19,22 @@
             z-index: 1;
         }
 
-        // Pink triangle confetti
-        &::before {
-            @include confetti(331px, 333px, '../assets/pink-triangle.png');
-            background-size: 70%;
-            top: 0;
-            left: 0;
-        }
-        
-        // Purple washer confetti
-        &::after {
-            @include confetti(182px, 182px, '../assets/purple-washer.png');
-            background-size: 70%;
-            top: 80px;
-            left: 20px;
+        @media (min-width: 640px) {
+            // Pink triangle confetti
+            &::before {
+                @include confetti(331px, 333px, '../assets/pink-triangle.png');
+                background-size: 70%;
+                top: 0;
+                left: 0;
+            }
+            
+            // Purple washer confetti
+            &::after {
+                @include confetti(182px, 182px, '../assets/purple-washer.png');
+                background-size: 70%;
+                top: 80px;
+                left: 20px;
+            }
         }
 
     }
