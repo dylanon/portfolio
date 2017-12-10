@@ -101,12 +101,14 @@ header {
         font-size: 17.2rem;
     }
 
-    // Pink squiggle confetti
-    &::before {
-        @include confetti(65px, 92px, '../assets/pink-squiggle.png');
-        top: -18rem;
-        left: 30%;
-        transform: rotate(0.25turn);
+    @media (min-width: 800px) {
+        // Pink squiggle confetti
+        &::before {
+            @include confetti(65px, 92px, '../assets/pink-squiggle.png');
+            top: -18rem;
+            left: 30%;
+            transform: rotate(0.25turn);
+        }
     }
 }
 
@@ -118,19 +120,21 @@ header {
         weight: 400;
     }
 
-    // Blue wave confetti
-    &::before {
-        @include confetti(68px, 108px, '../assets/blue-wave.png');
-        top: 20rem;
-        left: 70%;
-        transform: rotate(0.25turn);
-    }
-
-    // Green arrow confetti
-    &::after {
-        @include confetti(68px, 56px, '../assets/green-arrow-wavy.png');
-        transform: rotate(0.25turn);
-        top: 11rem;
-        left: 10%;
+    @media (min-width: 800px) {
+        // Blue wave confetti
+        &::before {
+            @include confetti(68px, 108px, '../assets/blue-wave.png');
+            top: 20rem;
+            left: 70%;
+            transform: rotate(0.25turn);
+        }
+    
+        // Green arrow confetti
+        &::after {
+            @include confetti(68px, 56px, '../assets/green-arrow-wavy.png');
+            transform: rotate(0.25turn);
+            top: 11rem;
+            left: 10%;
+        }
     }
 }

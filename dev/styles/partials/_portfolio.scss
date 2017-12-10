@@ -5,21 +5,24 @@
     position: relative;
     overflow: hidden;
 
-    // Gray dotted square
-    &::before {
-        @include confetti(564px, 564px, '../assets/grey-dotted-square.png');
-        top: 400px;
-        right: -150px;
-        z-index: -1;
+    @media (min-width: 769px) {
+        // Gray dotted square
+        &::before {
+            @include confetti(564px, 564px, '../assets/grey-dotted-square.png');
+            top: 400px;
+            right: -150px;
+            z-index: -1;
+        }
+    
+        // Another gray dotted square
+        &::after {
+            @include confetti(564px, 564px, '../assets/grey-dotted-square.png');
+            bottom: 160px;
+            left: -150px;
+            z-index: -1;
+        }
     }
 
-    // Another gray dotted square
-    &::after {
-        @include confetti(564px, 564px, '../assets/grey-dotted-square.png');
-        bottom: 160px;
-        left: -150px;
-        z-index: -1;
-    }
 }
 
 .project {

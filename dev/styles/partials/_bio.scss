@@ -45,19 +45,21 @@
     // For confetti
     position: relative;
 
-    // Dotted circle confetti
-    &::before {
-        @include confetti(772px, 772px, '../assets/grey-dotted-circle.png');
-        top: 150px;
-        left: -300px;
+    @media (min-width: 769px) {
+        // Dotted circle confetti
+        &::before {
+            @include confetti(772px, 772px, '../assets/grey-dotted-circle.png');
+            top: 150px;
+            left: -300px;
+        }
     }
 
     // Purple ring confetti
-    &::after {
-        @include confetti(81px, 81px, '../assets/purple-ring.png');
-        bottom: -125px;
-        right: -30px;
-    }
+    // &::after {
+    //     @include confetti(81px, 81px, '../assets/purple-ring.png');
+    //     bottom: -125px;
+    //     right: -30px;
+    // }
 
     @media (max-width: 901px) {
         flex-flow: column nowrap;
