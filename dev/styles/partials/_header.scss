@@ -36,9 +36,15 @@ header {
     padding: 0 0.7em;
     transform: skewX(-40deg);
     transition: background-color 0.3s ease;
+    z-index: 20;
     
     &:hover {
         background-color: $accent-color-one;
+    }
+
+    // Change background when nav is active
+    &.nav-active {
+        background-color: $primary-color;
     }
     
     a {
@@ -61,18 +67,23 @@ header {
     align-items: center;
     padding-top: 60px;
 
-    ul {
-        margin: 0;
-        padding: 0;
-    }
-    
-    li {
-        display: inline-block;
-        margin: 0 1.6rem;
+    // Change layout for mobile nav
+    @media (max-width: 768px) {
+        flex-flow: column nowrap;
+        align-items: flex-start;
+        padding-top: 30px;
     }
 }
 
 .main-nav-links {
+    margin: 0;
+    padding: 0;
+
+    li {
+        display: inline-block;
+        margin: 0 1.6rem;
+    }
+
     a {
         font-size: 2rem;
         color: $light-text-color;
@@ -81,11 +92,55 @@ header {
         &:hover,
         &:focus {
             color: $accent-color-two;
+
+            // Change link focus color for mobile
+            @media (max-width: 768px) {
+                color: $primary-color;
+            }
         }
     }
 
+    // Set up the mobile nav (rotated offscreen)
     @media (max-width: 768px) {
-        display: none;
+        background: $secondary-color;
+        align-self: center;
+        width: 100%;
+        padding: 66px 0 0 0;
+        text-align: center;
+        position: absolute;
+        top: 0;
+        z-index: 10;
+        transform-origin: left top;
+        transform: rotate(-90deg);
+        transition: transform 0.3s ease;
+
+        li {
+            display: block;
+            padding: 0.8rem 0;
+        }
+
+        &::after {
+            @include angledEdge(-5deg);
+        }
+    }
+
+    // For mobile nav transition
+    &.nav-active {
+        transform: initial;
+    }
+}
+
+// The mobile nav toggle
+.nav-toggle {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 36px;
+    font-size: 1.3em;
+    z-index: 20;
+
+    @media (max-width: 768px) {
+        display: block;
     }
 }
 

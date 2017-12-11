@@ -21,6 +21,9 @@
                         Dylan On
                     </a>
                 </div>
+                <div class="nav-toggle">
+                    <i class="fas fa-bars" title="Menu"></i>
+                </div>
                 <ul class="main-nav-links">
                     <li>
                         <a href="#about">About</a>
@@ -374,6 +377,16 @@
             <p class="fineprint">Built with <i class="fas fa-heart" title="Love"></i> by Dylan On</p>
         </div>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $('.nav-toggle').on('click', function() {
+                $('.main-nav-links').toggleClass('nav-active');
+                $('.logo').toggleClass('nav-active');
+            });
+        });
+    </script>
 </body>
 
 </html>
