@@ -29,6 +29,11 @@ header {
     &::after {
         @include angledEdge(-5deg, right bottom);
     }
+
+    // Fix display on mobile devices in landscape orientation
+    @media (max-height: 500px) and (orientation: landscape) {
+        height: 120vh;
+    }
 }
 
 .logo {
@@ -152,11 +157,12 @@ header {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%) rotate(-0.25turn);
-    // float: left;
-    // margin: auto;
-    // transform: rotate(-0.25turn);
-    // margin: 0;
-    // transform: rotate(-0.25turn) translateX(50%);
+
+    // Fix display on mobile devices in landscape orientation
+    @media (max-height: 500px) and (orientation: landscape) {
+        transform: translate(-50%, -50%) rotate(0) scale(0.8);
+        text-align: center;
+    }
 }
 
 .site-title {
