@@ -7,20 +7,34 @@ function closeNav() {
     $('.logo').removeClass('nav-active');
 }
 
-$(function() {
+function toggleNav() {
     // Toggle class for CSS transition when mobile nav toggle is pressed
     $('.nav-toggle').on('click', function() {
         $('.main-nav-links').toggleClass('nav-active');
         $('.logo').toggleClass('nav-active');
     });
+}
 
+function smoothScrollLinks() {
     $('.main-nav-links a').smoothScroll({
         beforeScroll: closeNav,
         speed: 600
     });
+}
 
+function aosInit() {
     // Initialize Animate On Scroll
     AOS.init({
         duration: 700
     });
+}
+
+function init() {
+    toggleNav();
+    smoothScrollLinks();
+    aosInit();
+}
+
+$(function() {
+    init();
 });
