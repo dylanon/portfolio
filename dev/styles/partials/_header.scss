@@ -138,17 +138,58 @@ header {
 .nav-toggle {
     display: none;
     position: absolute;
-    top: 20px;
-    right: 36px;
-    font-size: 1.3em;
+    top: 14px;
+    right: 14px;
     z-index: 20;
 
     a {
+        display: block;
+        padding: 10px;
         color: $light-text-color;
     }
 
     @media (max-width: 768px) {
         display: block;
+    }
+}
+
+// Create and animate the nav toggle bars
+.toggle-bar {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 3px;
+    background: $light-text-color;
+    margin: 4px 0;
+    border-radius: 1px;
+    position: relative;
+}
+
+.top-bar {
+    top: 0;
+    transition: top 0.3s ease, transform 0.3s ease;
+
+    &.nav-active {
+        top: 7px;
+        transform: rotate(-45deg);
+    }
+}
+
+.middle-bar {
+    transition: transform 0.3s ease;
+
+    &.nav-active {
+        transform: rotate(45deg);
+    }
+}
+
+.bottom-bar {
+    bottom: 0;
+    transition: bottom 0.3s ease;
+
+    &.nav-active {
+        bottom: 7px;
+        transform: rotate(45deg);
     }
 }
 

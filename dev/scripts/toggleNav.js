@@ -6,5 +6,6 @@ export default function toggleNav() {
         e.preventDefault();
         $('.main-nav-links').toggleClass('nav-active');
         $('.logo').toggleClass('nav-active');
+        $('.toggle-bar').toggleClass('nav-active');
     });
 }
