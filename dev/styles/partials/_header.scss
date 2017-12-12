@@ -143,6 +143,10 @@ header {
     font-size: 1.3em;
     z-index: 20;
 
+    a {
+        color: $light-text-color;
+    }
+
     @media (max-width: 768px) {
         display: block;
     }
