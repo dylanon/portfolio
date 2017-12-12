@@ -178,7 +178,7 @@ header {
         font-size: 17.2rem;
     }
 
-    @media (min-width: 800px) {
+    @media (min-width: 813px) {
         // Pink squiggle confetti
         &::before {
             @include confetti(65px, 92px, '../assets/pink-squiggle.png');
@@ -206,7 +206,7 @@ header {
         weight: 400;
     }
 
-    @media (min-width: 800px) {
+    @media (min-width: 813px) {
         // Blue wave confetti
         &::before {
             @include confetti(68px, 108px, '../assets/blue-wave.png');
