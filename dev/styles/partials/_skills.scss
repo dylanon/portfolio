@@ -89,9 +89,10 @@
             left: -2px;
             top: -2px;
 
-            i {
-                color: $accent-color-one;
-            }
+            // Highlight the icon (disabled)
+            // i {
+            //     color: $accent-color-one;
+            // }
         }
 
         @media (max-width: 1000px) {
