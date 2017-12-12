@@ -185,7 +185,7 @@ header {
             top: -18rem;
             left: 30%;
             transform: rotate(0.25turn);
-            animation: shake 5s linear 0s infinite;
+            animation: shake 3s linear 0s infinite;
         }
     }
 
@@ -213,7 +213,7 @@ header {
             top: 20rem;
             left: 70%;
             transform: rotate(0.25turn);
-            animation: pulse 10s linear 0s infinite;
+            animation: pulse 5s linear 1s infinite;
         }
     
         // Green arrow confetti
@@ -223,7 +223,7 @@ header {
             transform: rotate(0.25turn);
             top: 11rem;
             left: 10%;
-            animation: spin 12s linear 2s infinite;
+            animation: spin 8s linear 2s infinite;
         }
     }
 

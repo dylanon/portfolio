@@ -4,19 +4,15 @@
     0% {
         transform: rotate(0.25turn) scale(1);
     }
-
     15% {
         transform: rotate(0.25turn) scale(1);
     }
-
     30% {
-        transform: rotate(0.26turn) scale(1.1);
+        transform: rotate(0.28turn) scale(1.15);
     }
-
     60% {
         transform: rotate(0.25turn) scale(1);
     }
-
     100% {
         transform: rotate(0.25turn) scale(1);
     }
@@ -26,27 +22,21 @@
     0% {
         transform: rotate(0.25turn);
     }
-
     5% {
-        transform: rotate(0.26turn);
+        transform: rotate(0.27turn);
     }
-
     10% {
         transform: rotate(0.25turn);
     }
-
     15% {
-        transform: rotate(0.26turn);
+        transform: rotate(0.27turn);
     }
-
     20% {
         transform: rotate(0.25turn);
     }
-
     25% {
-        transform: rotate(0.26turn);
+        transform: rotate(0.27turn);
     }
-
     100% {
         transform: rotate(0.25turn);
     }
@@ -56,16 +46,18 @@
     0% {
         transform: rotate(0.25turn);
     }
-
     5% {
         transform: rotate(1.25turn);
     }
-
     10% {
         transform: rotate(0.25turn);
     }
-
     100% {
         transform: rotate(0.25turn);
     }
+}
+
+// Draw line animation - Extends AOS
+[data-aos="do-draw-line"].aos-animate::before {
+    height: 7.6rem;
 }

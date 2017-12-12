@@ -113,11 +113,13 @@ h5 {
             display: block;
             content: '';
             width: 1px;
-            height: 7.6rem;
+            // height: 7.6rem; // Post-animation height
+            height: 0;
             background: $line-color;
             position: absolute;
             left: 0;
             bottom: 0;
+            transition: height 1.5s;
         }
     }
 }

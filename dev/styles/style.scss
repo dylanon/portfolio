@@ -22,12 +22,12 @@ $font-secondary: 'Playfair Display', serif;
 
 @import 'partials/setup';
 @import 'partials/mixins';
+@import '../../node_modules/aos/dist/aos';
 @import 'partials/globals';
-@import 'partials/keyframes';
+@import 'partials/animations';
 @import 'partials/header';
 @import 'partials/bio';
 @import 'partials/portfolio';
 @import 'partials/skills';
 @import 'partials/contact';
 @import 'partials/footer';
-@import '../../node_modules/aos/dist/aos';
