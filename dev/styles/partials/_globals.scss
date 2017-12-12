@@ -5,7 +5,6 @@ html {
 }
 
 body {
-    // background: black;
     color: $text-color;
     font: {
         family: $font;
@@ -28,12 +27,13 @@ a {
         weight: 700;
     }
     text-transform: uppercase;
-    text-decoration: underline;
-    transition: color 0.2s ease;
-
+    text-decoration: none;
+    transition: color 0.3s ease;
+    
     &:hover,
     &:focus {
         color: $accent-color-one;
+        text-decoration: underline
     }
 }
 
